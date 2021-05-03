@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()  #load .env file
 
-# from keep_alive import keep_alive
+from keep_alive import keep_alive
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN_6")
 count4 = 0
@@ -178,7 +178,7 @@ def sleep(rest):
 #     time.sleep(5)
 #     i += 1
 
-# thread = keep_alive()
+thread = keep_alive()
 bot.gateway.run(auto_reconnect=True)
 
 
